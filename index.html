@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hanged</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div id="board">
+      <div id="start-overlay">
+        <h1 id="title">Hanged</h1>
+        <button id="start">Play</button>
+      </div>
+
+      <div id="hanged">
+        <div class="hanged-part" id="vertical-line"></div>
+        <div class="hanged-part" id="horizontal-line"></div>
+        <div class="hanged-part" id="short-vertical-line"></div>
+        <div id="man">
+          <div class="hanged-part" id="circle"></div>
+          <div class="hanged-part" id="body"></div>
+          <div class="hanged-part" id="right-arm"></div>
+          <div class="hanged-part" id="left-arm"></div>
+          <div class="hanged-part" id="right-leg"></div>
+          <div class="hanged-part" id="left-leg"></div>
+        </div>
+      </div>
+
+      <div id="playing-area">
+        <div id="word"></div>
+        <div id="letters">
+          <button class="letter-button" data-letter="A">A</button>
+          <button class="letter-button" data-letter="B">B</button>
+          <button class="letter-button" data-letter="C">C</button>
+          <button class="letter-button" data-letter="D">D</button>
+          <button class="letter-button" data-letter="E">E</button>
+          <button class="letter-button" data-letter="F">F</button>
+          <button class="letter-button" data-letter="G">G</button>
+          <button class="letter-button" data-letter="H">H</button>
+          <button class="letter-button" data-letter="I">I</button>
+          <button class="letter-button" data-letter="J">J</button>
+          <button class="letter-button" data-letter="K">K</button>
+          <button class="letter-button" data-letter="L">L</button>
+          <button class="letter-button" data-letter="M">M</button>
+          <button class="letter-button" data-letter="N">N</button>
+          <button class="letter-button" data-letter="O">O</button>
+          <button class="letter-button" data-letter="P">P</button>
+          <button class="letter-button" data-letter="Q">Q</button>
+          <button class="letter-button" data-letter="R">R</button>
+          <button class="letter-button" data-letter="S">S</button>
+          <button class="letter-button" data-letter="T">T</button>
+          <button class="letter-button" data-letter="U">U</button>
+          <button class="letter-button" data-letter="V">V</button>
+          <button class="letter-button" data-letter="W">W</button>
+          <button class="letter-button" data-letter="X">X</button>
+          <button class="letter-button" data-letter="Y">Y</button>
+          <button class="letter-button" data-letter="Z">Z</button>
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <div id="gameover-overlay">
+      <img src="" alt="image" id="gameover-image" />
+      <h1 id="gameover-message"></h1>
+      <p id="correct-answer"></p>
+      <button id="restart">Start new game</button>
+    </div>
+
+    <script src="./js/data.js"></script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
